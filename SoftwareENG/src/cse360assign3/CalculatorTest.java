@@ -1,3 +1,9 @@
+/**
+ * Description: The purpose of this program is to test the Calculator class.
+ * Name: Michael Heaton
+ * PIN: 404
+ * */
+
 package cse360assign3;
 
 import static org.junit.Assert.*;
@@ -60,7 +66,13 @@ public class CalculatorTest {
 
 	@Test
 	public void testGetHistory() {
-		fail("Not yet implemented");
+		Calculator tool = new Calculator();
+		tool.add(4);
+		tool.subtract(2);
+		tool.multiply(2);
+		tool.add(5);
+		
+		assertEquals("0 + 4 - 2 * 2 + 5", tool.getHistory());
 	}
 
 }
